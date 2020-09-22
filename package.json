@@ -62,7 +62,7 @@
     "@types/prop-types": "^15.5.2",
     "@types/react": "^16.0.36",
     "@types/react-dom": "^16.0.3",
-    "ppx-tools": "^1.0.0",
+    "ppx-tools": "^1.0.1",
     "antd": "3.x",
     "antd-mobile-demo-data": "^0.3.0",
     "babel-eslint": "^7.2.3",
