@@ -1,0 +1,73 @@
+@import "../../style/mixins";
+@import "../../style/themes/default";
+@import "../../picker/style/index.less";
+@import "../../picker-view/style/index.less";
+@import "../../modal/style/index.less";
+
+@ppxModalPrefixCls: ppx-multy-modal;
+@ppxMultyFormfieldPrefixCls: ppx-multy-formfield;
+
+.@{ppxModalPrefixCls} {
+  .title {
+    font-size: 14 * @hd;
+    height: 44 * @hd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &-content {
+      font-size: 16 * @hd;
+    }
+    &-right {
+      color: #4a7efe;
+    }
+  }
+  .content-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6 * @hd 15 * @hd;
+    font-size: 18 * @hd;
+    font-weight: 400;
+    color: #303133;
+    line-height: 18 * @hd;
+    margin-top: 18 * @hd;
+
+    &:first-child {
+      margin-top: 0;
+    }
+
+    &.active {
+      color: #4a7efe;
+    }
+
+    img {
+      width: 14 * @hd;
+      height: 14 * @hd;
+    }
+  }
+  .am-modal-header {
+    padding: 6 * @hd 15 * @hd;
+  }
+  .am-modal-body {
+    max-height: 300 * @hd;
+    overflow: auto;
+  }
+}
+
+.@{ppxMultyFormfieldPrefixCls} {
+  .text-dom {
+    display: block;
+    max-width: 590 * @hd;
+    height: 44 * @hd;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    line-height: 44 * @hd;
+    position: relative;
+    padding-right: 15 * @hd;
+    overflow: hidden;
+
+    &.active {
+      color: #c0c4cc;
+    }
+  }
+}

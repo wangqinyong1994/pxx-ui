@@ -1,0 +1,84 @@
+@import "../../style/mixins";
+@import "../../style/themes/default";
+@import "../../picker/style/index.less";
+@import "../../picker-view/style/index.less";
+
+@formFieldPrefixCls: ppx-formfield;
+
+.@{formFieldPrefixCls} {
+  background: #fff;
+
+  .control {
+    overflow: hidden;
+    position: relative;
+    border-bottom: @border-width-sm solid #e6e7eb;
+    padding: @v-spacing-md 0 @v-spacing-sm;
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: @link-button-font-size;
+      color: #909399;
+
+      .label {
+        margin-left: @tabs-font-size-heading;
+        color: #909399;
+      }
+
+      img {
+        width: @list-title-height;
+        height: @list-title-height;
+      }
+    }
+
+    .required {
+      color: #909399;
+
+      &::after {
+        content: "*";
+        color: #f22323;
+        margin-left: @h-spacing-sm;
+      }
+    }
+
+    .content {
+      font-size: @icon-size-xs;
+      font-weight: 400;
+      color: #303133;
+      line-height: @icon-size-xs;
+
+      &.grew {
+        color: #909399;
+      }
+    }
+
+    .error {
+      color: #f22323;
+      margin-left: @tabs-font-size-heading;
+    }
+  }
+
+  .text-dom {
+    display: block;
+    max-width: 590 * @hd;
+    height: 44 * @hd;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    line-height: 44 * @hd;
+    position: relative;
+    align-self: stretch;
+    padding: 0 15 * @hd;
+    overflow: hidden;
+    color: #303133;
+    font-weight: 400;
+
+    &.active {
+      color: #c0c4cc;
+    }
+  }
+
+  .am-input-control input::-webkit-input-placeholder {
+    color: #909399;
+  }
+}

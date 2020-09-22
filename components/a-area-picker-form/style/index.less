@@ -1,0 +1,20 @@
+@import "../../style/mixins";
+@import "../../style/themes/default";
+
+@ppxAreaPickerFormPrefixCls: ppx-areatext-dom;
+
+.@{ppxAreaPickerFormPrefixCls} {
+  max-width: 300 * @hd;
+  min-height: 44 * @hd;
+  line-height: 44 * @hd;
+  position: relative;
+  padding-left: 15 * @hd;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: #303133;
+
+  &.active {
+    color: #c0c4cc;
+  }
+}

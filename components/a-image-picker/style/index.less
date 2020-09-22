@@ -1,0 +1,56 @@
+@import "../../style/mixins";
+@import "../../style/themes/default";
+@import "../../toast/style/index.less";
+@import "../../image-picker/style/index.less";
+
+@ppxImagePickerPrefixCls: ppx-image-picker;
+
+.@{ppxImagePickerPrefixCls} {
+  font-size: 14 * @hd;
+  color: #303133;
+  padding-left: 16 * @hd;
+  overflow: hidden;
+
+  .remark-title {
+    margin-top: 16 * @hd;
+    color: #909399;
+  }
+
+  .required {
+    &::after {
+      content: "*";
+      color: #f22323;
+      margin-left: 2 * @hd;
+    }
+  }
+
+  .remark {
+    font-size: 18 * @hd;
+    font-weight: 400;
+    color: #c0c4cc;
+  }
+
+  .error {
+    font-size: 12 * @hd;
+    color: #f22323;
+    padding-bottom: 6 * @hd;
+  }
+
+  textarea {
+    color: #303133;
+  }
+
+  .am-list-item {
+    padding: 0;
+  }
+
+  .am-flexbox-item {
+    width: 73 * @hd;
+    height: 73 * @hd;
+  }
+
+  .am-flexbox {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}

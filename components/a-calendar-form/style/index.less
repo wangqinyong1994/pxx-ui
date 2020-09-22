@@ -1,0 +1,26 @@
+@import "../../style/mixins";
+@import "../../style/themes/default";
+@import "../../calendar/style/index.less";
+
+@ppxCalendarPrefixCls: ppx-calendar-form;
+
+.@{ppxCalendarPrefixCls} {
+  .text-dom {
+    display: block;
+    max-width: 590 * @hd;
+    height: 44 * @hd;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    line-height: 44 * @hd;
+    position: relative;
+    align-self: stretch;
+    padding-right: 15 * @hd;
+    overflow: hidden;
+    color: #303133;
+    font-weight: 400;
+
+    &.active {
+      color: #c0c4cc;
+    }
+  }
+}

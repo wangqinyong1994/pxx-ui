@@ -1,0 +1,91 @@
+@import "../../style/mixins";
+@import "../../style/themes/default";
+@import "../../modal/style/index.less";
+@import "../../search-bar/style/index.less";
+@import "../../activity-indicator/style/index.less";
+
+@ppxChooseModalPrefixCls: ppx-choose-modal;
+@ppxChooseModalFieldPrefixCls: ppx-choose-modal-formfield;
+
+.@{ppxChooseModalPrefixCls} {
+  .am-modal-header {
+    padding: 6 * @hd 15 * @hd;
+  }
+  .am-modal-close {
+    top: 5 * @hd;
+  }
+  .am-modal-body {
+    background-color: #f2f3f5;
+    height: calc(100vh - 30 * @hd);
+  }
+  .list-wrap {
+    overflow: auto;
+  }
+  .choose-wrap {
+    width: 100vw;
+
+    .search-wrap {
+      height: 48 * @hd;
+
+      .am-search {
+        height: 100%;
+      }
+    }
+
+    .card-wrap {
+      overflow: hidden;
+      margin-left: 16 * @hd;
+      padding: 12 * @hd 0;
+      border-bottom: @hd solid #e6e7eb;
+      position: relative;
+
+      .line1 {
+        font-size: 16 * @hd;
+        font-weight: 600;
+        color: #303133;
+        line-height: 16 * @hd;
+        line-height: 24 * @hd;
+        max-width: 280 * @hd;
+        word-break: break-all;
+        text-align: left;
+      }
+      .line2 {
+        position: absolute;
+        right: 16 * @hd;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 14 * @hd;
+        color: #108ee9;
+      }
+    }
+
+    .loading {
+      height: 48 * @hd;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 16 * @hd;
+    }
+  }
+}
+
+.@{ppxChooseModalFieldPrefixCls} {
+  .text-dom {
+    display: block;
+    max-width: 590 * @hd;
+    height: 44 * @hd;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    line-height: 44 * @hd;
+    position: relative;
+    align-self: stretch;
+    padding-right: 15 * @hd;
+    overflow: hidden;
+    color: #303133;
+    font-weight: 400;
+
+    &.active {
+      color: #c0c4cc;
+    }
+  }
+}

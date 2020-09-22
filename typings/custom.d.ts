@@ -1,5 +1,7 @@
 declare module 'classnames';
 
+declare module 'lodash';
+
 declare module 'antd-mobile-demo-data';
 
 declare module 'rmc-list-view';
@@ -25,6 +27,8 @@ declare module 'rmc-tooltip';
 declare module 'rmc-pull-to-refresh';
 declare module 'rc-slider/lib/Range';
 declare module 'rc-slider/lib/Slider';
+declare module 'rc-form';
+
 declare module 'rmc-steps';
 
 // declare var process: {

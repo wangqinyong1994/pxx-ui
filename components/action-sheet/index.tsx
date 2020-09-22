@@ -119,8 +119,8 @@ function createActionSheet(
       mode = 'normal';
       const normalOptions = options as string[];
       const badgesMap: any = {};
-      if(badges && badges.length > 0){
-        badges.forEach(( element: BadgesOption ) => {
+      if (badges && badges.length > 0) {
+        badges.forEach((element: BadgesOption) => {
           if (element.index >= 0) {
             badgesMap[element.index] = (
               <Badge {...element} />

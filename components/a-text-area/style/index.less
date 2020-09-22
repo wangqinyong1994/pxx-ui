@@ -1,0 +1,47 @@
+@import "../../style/mixins";
+@import "../../style/themes/default";
+@import "../../textarea-item/style/index.less";
+
+@ppxTextAreaPrefixCls: ppx-textarea-item;
+
+.@{ppxTextAreaPrefixCls} {
+  font-size: 14 * @hd;
+  color: #303133;
+  padding-left: 16 * @hd;
+  padding-bottom: 4 * @hd;
+  overflow: hidden;
+
+  .remark-title {
+    margin-top: 16 * @hd;
+    color: #909399;
+  }
+
+  .remark {
+    font-size: 18 * @hd;
+    font-weight: 400;
+    color: #c0c4cc;
+
+    .am-list-item {
+      padding: 0;
+    }
+  }
+
+  .required {
+    color: #909399;
+
+    &::after {
+      content: "*";
+      color: #f22323;
+      margin-left: 2 * @hd;
+    }
+  }
+
+  .error {
+    font-size: 12 * @hd;
+    color: #f22323;
+  }
+
+  textarea {
+    color: #303133;
+  }
+}

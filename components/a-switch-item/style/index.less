@@ -1,0 +1,43 @@
+@import "../../style/mixins";
+@import "../../style/themes/default";
+@import "../../switch/style/index.less";
+
+@ppxSwitchItemPrefixCls: ppx-switch-item;
+
+.@{ppxSwitchItemPrefixCls} {
+  font-size: @search-bar-input-height;
+  color: #303133;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 56 * @hd;
+  border-bottom: @hd solid #e6e7eb;
+  background-color: #fff;
+
+  .title {
+    margin-left: @font-size-caption;
+    font-size: @font-size-caption;
+  }
+
+  .checkbox {
+    margin-right: @font-size-caption;
+  }
+
+  .am-switch .checkbox {
+    width: @icon-size-lg;
+    height: @font-size-caption;
+
+    &::after {
+      width: 20 * @hd;
+      height: 20 * @hd;
+      top: -2 * @hd;
+    }
+  }
+
+  .am-switch .checkbox:after {
+    left: 0;
+  }
+  .am-switch .checkbox:before {
+    width: auto;
+  }
+}

@@ -1,0 +1,71 @@
+@import "../../style/mixins";
+@import "../../style/themes/default";
+@import "../../modal/style/index.less";
+@import "../../tabs/style/index.less";
+@import "../../activity-indicator/style/index.less";
+@import "../../icon/style/index.less";
+
+@ppxAreaPickerPrefixCls: ppx-area-picker;
+@ppxAreaPickerModalPrefixCls: ppx-area-modal;
+
+.@{ppxAreaPickerPrefixCls} {
+  font-size: 16 * @hd;
+  font-weight: 400;
+}
+
+.@{ppxAreaPickerModalPrefixCls} {
+  .modal-title {
+    padding: 0 16 * @hd;
+    height: 48 * @hd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #19191a;
+
+    .tool {
+      color: #4a7efe;
+    }
+  }
+
+  .content {
+    font-size: 18 * @hd;
+    font-weight: 400;
+    color: #303133;
+    line-height: 18 * @hd;
+    padding: 0 16 * @hd 16 * @hd;
+    height: 250 * @hd;
+    overflow: auto;
+
+    .am-activity-indicator {
+      display: flex;
+      justify-content: center;
+    }
+
+    .content-title {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      padding-top: 18 * @hd;
+    }
+
+    .content-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 18 * @hd;
+      font-weight: 400;
+      color: #303133;
+      line-height: 18 * @hd;
+      margin-top: 18 * @hd;
+
+      &.active {
+        color: #4a7efe;
+      }
+
+      img {
+        width: 14 * @hd;
+        height: 14 * @hd;
+      }
+    }
+  }
+}

@@ -170,7 +170,7 @@ export default class SearchBar extends React.Component<
         if (document.body) {
           document.body.scrollTop = document.body.scrollTop;
         }
-      },100);
+      }, 100);
       this.props.onBlur();
     }
   }
