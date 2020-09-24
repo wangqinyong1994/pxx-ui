@@ -30,7 +30,7 @@ const AreaPicker: React.FunctionComponent<AreaPickerProps> = forwardRef(
       organizationListChild,
       organizationGetRoot,
     },
-    _ref,
+    _ref
   ) => {
     const [tabs, setTabs] = useState<any[]>([]);
     const [panes, setPanes] = useState<any[]>([]);
@@ -58,7 +58,7 @@ const AreaPicker: React.FunctionComponent<AreaPickerProps> = forwardRef(
         if (step > -1) {
           const title = formatTitle(
             panes.find((item: any) => item.checked).title,
-            4,
+            4
           );
           _tabs.splice(step, 1, { title });
         }
@@ -181,7 +181,7 @@ const AreaPicker: React.FunctionComponent<AreaPickerProps> = forwardRef(
         </Modal>
       </span>
     );
-  },
+  }
 );
 
 export default AreaPicker;

@@ -29,12 +29,12 @@ const MultyModalFormItem = forwardRef(
       rules,
       fieldOptions,
     }: MultyModalFormItemProps,
-    ref,
+    ref
   ) => {
     const [visible, setVisible] = useState(false);
     const [panes, setPanes] = useState(JSON.parse(JSON.stringify(initPanes)));
     const [savedPanes, setSavedPanes] = useState(
-      JSON.parse(JSON.stringify(initPanes)),
+      JSON.parse(JSON.stringify(initPanes))
     );
     useImperativeHandle(ref, () => ({
       panes: savedPanes.filter((item: Noop) => item.checked),
@@ -113,7 +113,7 @@ const MultyModalFormItem = forwardRef(
                 if (getFieldValue(itemName)) {
                   setPanes(JSON.parse(JSON.stringify(getFieldValue(itemName))));
                   setSavedPanes(
-                    JSON.parse(JSON.stringify(getFieldValue(itemName))),
+                    JSON.parse(JSON.stringify(getFieldValue(itemName)))
                   );
                 }
                 setVisible(true);
@@ -156,7 +156,7 @@ const MultyModalFormItem = forwardRef(
         </Modal>
       </div>
     );
-  },
+  }
 );
 
 export default MultyModalFormItem;
