@@ -4,4 +4,4 @@ WORKDIR /usr/share/nginx/html
 
 EXPOSE 80
 
-COPY dist/* ./
+COPY _site/* ./

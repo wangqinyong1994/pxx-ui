@@ -11,7 +11,7 @@ pipeline {
                 echo 'Install'
                 container('nodejs') {
                     sh 'yarn --production'
-                    sh 'yarn build'
+                    sh 'yarn site'
                 }
             }
         }
