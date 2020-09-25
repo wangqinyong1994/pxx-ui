@@ -1,4 +1,4 @@
-const getWebpackConfig = require("antd-tools/lib/getWebpackConfig");
+const getWebpackConfig = require("ppx-tools/lib/getWebpackConfig");
 const Visualizer = require("webpack-visualizer-plugin");
 const pkg = require("./package.json");
 
