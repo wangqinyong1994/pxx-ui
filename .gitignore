@@ -36,3 +36,5 @@ npm-debug.log*
 coverage
 /es/
 .cdnkey
+yarn.lock
+package-lock.json
