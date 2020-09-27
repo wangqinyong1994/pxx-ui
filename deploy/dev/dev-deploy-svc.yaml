@@ -12,7 +12,7 @@ spec:
       port: 80
       protocol: TCP
       targetPort: 80
-      nodePort: 30928
+      nodePort: 30998
   selector:
     app: ppx-ui
     component: ppx-ui-dev
