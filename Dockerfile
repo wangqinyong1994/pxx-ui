@@ -1,13 +1,7 @@
-FROM nginx:1.17.8
+FROM nginx:latest
 
-WORKDIR /usr/local/var/www/dist
-
-COPY nginx.conf /usr/local/etc/nginx
+WORKDIR /usr/share/nginx/html
 
 EXPOSE 80
-EXPOSE 8011
-EXPOSE 8002
 
 COPY _site/* ./
-
-CMD [ "sh", "-c", "ls" ]
