@@ -16,18 +16,18 @@ pipeline {
                 }
             }
         }
-        stage('Code Analysis') {
-            steps {
-                container('nodejs') {
-                   withSonarQubeEnv('sonar') {
-                        sh "sonar-scanner"
-                    }
-                    timeout(time: 8, unit: 'MINUTES') {
-                        waitForQualityGate abortPipeline: true
-                    }
-                }
-            }
-        }
+        // stage('Code Analysis') {
+        //     steps {
+        //         container('nodejs') {
+        //            withSonarQubeEnv('sonar') {
+        //                 sh "sonar-scanner"
+        //             }
+        //             timeout(time: 8, unit: 'MINUTES') {
+        //                 waitForQualityGate abortPipeline: true
+        //             }
+        //         }
+        //     }
+        // }
         stage('Build Image') {
             steps {
                 echo 'Building....'
