@@ -40,14 +40,14 @@ pipeline {
             steps {
                 // input(message: '@jiangwei  是否停止', submitter: 'jiangwei')
                 kubernetesDeploy(enableConfigSubstitution: true, deleteResource: false, kubeconfigId: 'demo-kubeconfig', configs: 'deploy/dev/**')
-                mail(to: 'jiangwei@hztianque.com', cc: 'liujie@hztianque.com,hudong@hztianque.com,wangqinyong@hztianque.com', subject: 'DevOps通知', body: '流水线运行成功。\n工作系统前端，目前已经成功部署于 http://192.168.40.17:30928')
+                mail(to: 'wangqinyong@hztianque.com', subject: 'DevOps通知', body: '流水线运行成功。\n工作系统前端，目前已经成功部署于 http://192.168.40.17:30998')
                 sh '''curl \'https://oapi.dingtalk.com/robot/send?access_token=28129cf1ca75cfac86a04bc16757bbfd9cefcbe322cd7ac8489dcff8eb540444\' \\
                         -H \'Content-Type: application/json\' \\
                         -d \'{
                             "msgtype": "markdown",
                             "markdown": {
                                 "title":"CI 通知",
-                                "text": "#### 流水线运行成功 \\n> 工作系统 已经成功部署\\n> http://192.168.40.17:30928 \\n > ###### k8s-DevOps \\n"
+                                "text": "#### 流水线运行成功 \\n> 工作系统 已经成功部署\\n> http://192.168.40.17:30998 \\n > ###### k8s-DevOps \\n"
                             }
                         }\''''
 

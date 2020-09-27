@@ -1,6 +1,6 @@
-FROM nginx:latest
+FROM nginx:1.17.8
 
-WORKDIR /usr/share/nginx/html
+WORKDIR /usr/local/var/www/dist
 
 COPY nginx.conf /usr/local/etc/nginx
 
