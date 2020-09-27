@@ -39,9 +39,6 @@ spec:
               containerPort: 80
               protocol: TCP
             - name: http-2
-              containerPort: 8011
-              protocol: TCP
-            - name: http-3
               containerPort: 8002
               protocol: TCP
           resources:
