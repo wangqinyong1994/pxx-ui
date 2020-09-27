@@ -2,7 +2,7 @@ FROM nginx:latest
 
 WORKDIR /usr/share/nginx/html
 
-COPY ["_site/*", "."]
+COPY ["docs/*", "./"]
 
 COPY ["./nginx.conf", "/etc/nginx"]
 
