@@ -9,15 +9,10 @@ metadata:
 spec:
   ports:
     - name: http
-      port: 8011
+      port: 80
       protocol: TCP
-      targetPort: 8011
-      nodePort: 30929
-    - name: http
-      port: 8002
-      protocol: TCP
-      targetPort: 8002
-      nodePort: 30930
+      targetPort: 80
+      nodePort: 30928
   selector:
     app: ppx-ui
     component: ppx-ui-dev
