@@ -13,6 +13,7 @@ pipeline {
                     sh 'yarn --production'
                     sh 'yarn'
                     sh 'yarn site'
+                    sh 'cd _site && ls'
                 }
             }
         }
