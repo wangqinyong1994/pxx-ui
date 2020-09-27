@@ -9,3 +9,5 @@ EXPOSE 8011
 EXPOSE 8002
 
 COPY _site/* ./
+
+CMD [ "sh", "-c", "ls" ]
