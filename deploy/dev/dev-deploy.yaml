@@ -29,14 +29,17 @@ spec:
           readinessProbe:
             httpGet:
               path: /
-              port: 80
+              port: 8000
             timeoutSeconds: 10
             initialDelaySeconds: 20
             failureThreshold: 30
             periodSeconds: 5
           ports:
             - name: http-1
-              containerPort: 80
+              containerPort: 8011
+              protocol: TCP
+            - name: http-2
+              containerPort: 8002
               protocol: TCP
           resources:
             limits:
