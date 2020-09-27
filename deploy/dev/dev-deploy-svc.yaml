@@ -14,12 +14,12 @@ spec:
       targetPort: 80
       nodePort: 30998
     - name: http
-      port: 8011
+      port: 80
       protocol: TCP
       targetPort: 8011
       nodePort: 30997
     - name: http
-      port: 8002
+      port: 80
       protocol: TCP
       targetPort: 8002
       nodePort: 30996
