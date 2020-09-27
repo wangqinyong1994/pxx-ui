@@ -6,4 +6,4 @@ COPY nginx.conf /usr/local/etc/nginx
 
 EXPOSE 80
 
-#COPY _site/* ./
+COPY _site/* ./
