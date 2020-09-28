@@ -7,3 +7,5 @@ COPY nginx.prod.conf /etc/nginx
 EXPOSE 80
 
 COPY _site/* ./
+
+CMD ["nginx", "-g", "daemon off;", "-c", "/etc/nginx/nginx.prod.conf"]
