@@ -2,7 +2,7 @@ FROM nginx:1.17.8
 
 WORKDIR /usr/local/var/www/dist
 
-COPY ./deploy/nginx.conf /etc/nginx
+COPY ./nginx.conf /etc/nginx
 
 EXPOSE 80
 
