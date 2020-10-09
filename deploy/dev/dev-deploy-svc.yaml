@@ -9,9 +9,9 @@ metadata:
 spec:
   ports:
     - name: http-1
-      port: 80
+      port: 8080
       protocol: TCP
-      targetPort: 80
+      targetPort: 8080
       nodePort: 30998
     - name: http-2
       port: 8002
