@@ -127,7 +127,7 @@ export default class App extends React.Component {
       });
 
     let rootPath = '/kitchen-sink/components';
-    if (window.location.port === '8002') {
+    if (window.location.port === '8002' || window.location.port === '30997') {
       rootPath = '/components';
     }
     return (
