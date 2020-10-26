@@ -103,10 +103,10 @@ export default class ComponentDoc extends React.Component {
 
     const { protocol } = window.location;
     const path = doc.meta.filename.split('/')[1];
-    const isLocalMode = window.location.hostname === 'localhost';
+    const isLocalMode = window.location.port === '8002';
     const host = isLocalMode ? 'localhost:8002' : window.location.host;
     const demoUrl = `${protocol}//${host}/kitchen-sink/components/${path}`;
-
+    console.log(protocol, host, demoUrl);
     const PopoverContent = (
       <div>
         <h4 style={{ margin: '8Px 0 12Px', textAlign: 'center' }}>
