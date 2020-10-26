@@ -107,7 +107,7 @@ export default class ComponentDoc extends React.Component {
     let host;
     if (isLocalMode) {
       if (port === '30998') {
-        host = '192.168.40.17:30998';
+        host = '192.168.40.17:30997';
       } else {
         host = 'localhost:8002';
       }
