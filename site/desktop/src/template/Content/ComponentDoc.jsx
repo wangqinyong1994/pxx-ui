@@ -103,7 +103,7 @@ export default class ComponentDoc extends React.Component {
 
     const { protocol } = window.location;
     const path = doc.meta.filename.split('/')[1];
-    const isLocalMode = window.location.port;
+    const isLocalMode = window.location.hostname === 'localhost';
     const host = isLocalMode ? 'localhost:8002' : window.location.host;
     const demoUrl = `${protocol}//${host}/kitchen-sink/components/${path}`;
 
