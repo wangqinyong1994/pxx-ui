@@ -1,0 +1,49 @@
+@import "../../style/mixins";
+@import "../../style/themes/default";
+@import "../../modal/style/index.less";
+
+@ppxDateModalWrapPrefixCls: ppx-datemodal-wrap;
+@ppxDateModalPrefixCls: ppx-datemodal;
+
+.@{ppxDateModalWrapPrefixCls} {
+  font-size: 16 * @hd;
+  font-weight: 400;
+}
+
+.@{ppxDateModalPrefixCls} {
+  .modal-title {
+    padding: 0 16 * @hd;
+    height: 48 * @hd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #19191a;
+
+    .tool {
+      color: #4a7efe;
+    }
+  }
+
+  .modal-tabs {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 42 * @hd;
+    border-bottom: 1 * @hd solid #dcdee3;
+
+    &-item {
+      box-sizing: border-box;
+      width: 64 * @hd;
+      font-size: 16 * @hd;
+      font-weight: 600;
+      text-align: center;
+      color: #606266;
+      line-height: 42 * @hd;
+    }
+
+    .active {
+      color: #303133;
+      border-bottom: 3 * @hd solid #4a7efe;
+    }
+  }
+}

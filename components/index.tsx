@@ -15,6 +15,8 @@ if (
 }
 
 export { default as FormField } from "./a-form-field/index";
+export { default as ADateModal } from "./a-date-modal/index";
+export { default as AFloatLayout } from "./a-float-layout/index";
 export { default as AreaPicker } from "./a-area-picker/index";
 export { default as AreaPickerFormItem } from "./a-area-picker-form/index";
 export { default as SwitchFormItem } from "./a-switch-item/index";
